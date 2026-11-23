@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; background: #0e0e10; color: #eee; margin: 0; padding: 1rem; }
+.eyebrow { color: #8af; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.75rem; }
+h1 { margin: 0.2rem 0; }
+.lead { max-width: 40rem; color: #ccc; }
+.status { color: #fa8; }
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.5rem 0; }
+button, input, select { background: #222; color: #eee; border: 1px solid #444; padding: 0.4rem 0.8rem; border-radius: 4px; }
+button:hover { background: #333; }
+.ghost { opacity: 0.7; }
+.dock { position: sticky; bottom: 0; background: #0e0e10; padding: 0.5rem; display: flex; gap: 0.5rem; }
+.bars { display: flex; gap: 4px; margin: 1rem 0; }
+.bar { width: 40px; height: 20px; background: #333; border-radius: 2px; }
+.bar.active { background: #8af; }
+.note { font-size: 0.8rem; color: #888; }

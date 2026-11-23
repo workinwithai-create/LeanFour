@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LeanFour — four-bar lean-in desk</title>
+  <meta name="description" content="Four live-instrument bars where harmony leans into the next chord while the kit stays locked." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>LeanFour</h1>
+  <p class="lead">Four-bar lean-in desk. Square loops feel stuck. Session players lean the harmony into the next chord on the last beat while the kit holds the grid. Live piano, upright bass, nylon guitar, acoustic kit. Not a pedal. Not a push. Not a fill.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <p class="eyebrow">Lean amount</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Your progression (4 chords, e.g. Am F C G)</p>
+  <input id="chords" type="text" value="Am F C G" placeholder="Am F C G" />
+  <label>BPM <input id="bpm" type="number" min="60" max="180" value="92" /></label>
+  <label>Key <select id="key">
+    <option value="Am">A minor</option>
+    <option value="C">C major</option>
+    <option value="Em">E minor</option>
+    <option value="G">G major</option>
+  </select></label>
+  <div class="bars" id="bars"></div>
+  <button id="exportWav">Export WAV (folded tail)</button>
+  <button id="exportMid">Export MIDI</button>
+</main>
+<div class="dock">
+  <button id="play">Play</button>
+  <button class="ghost" id="stop">Stop</button>
+</div>
+<p class="note">Tap to start audio. On iOS the silent switch mutes Web Audio. Hardware MIDI keyboard supported (on-screen fallback).</p>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
